@@ -1,0 +1,29 @@
+server:
+  port: 5454
+spring:
+  application:
+    name: e-commerce-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/e-commerce?createDatabaseIfNotExist=true
+    username: root
+    password: Coder@9505
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+rsa:
+  public-key: classpath:certs/public.pem
+  private-key: classpath:certs/private.pem
+
+razorpay:
+  api:
+    key: rzp_test_kTsRSaDC8hwztX
+    secret: LieoD1s9mxMIv569PcgRDMcU
+
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        security: DEBUG
+
